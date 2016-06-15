@@ -1,6 +1,6 @@
 {
     "variables": {
-        "disk_size": "61440",
+        "disk_size": "131072",
         "password": "vagrant"
     },
 
@@ -34,10 +34,11 @@
             "winrm_username": "vagrant",
             "winrm_password": "vagrant",
             "winrm_timeout": "10000s",
-
+            "headless": "true",
             "qemuargs": [
                 [ "-m", "4048M" ],
-                [ "-cpu", "Westmere" ]
+                [ "-cpu", "Westmere" ],
+                [ "-smp", "4"]
             ]
         }
     ],
